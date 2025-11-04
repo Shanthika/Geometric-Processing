@@ -33,7 +33,6 @@ def get_lmatrix(L, anchor_indices,handles, num_verts):
         hmatrix[i, handles[i]] = 1.0
     
     L = np.vstack((L,amatrix,hmatrix))     
-    L = np.vstack((L,amatrix,hmatrix))     
     L = sparse.coo_matrix(L, shape=(L.shape)).tocsr()
     return L
 
