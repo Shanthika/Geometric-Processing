@@ -33,7 +33,7 @@ def get_lmatrix(L, anchor_indices, num_verts):
     
     L = sparse.coo_matrix(L, shape=(L.shape)).tocsr()
     bmatrix = sparse.coo_matrix(bmatrix, shape=(bmatrix.shape)).tocsr()
-    breakpoint()
+    
     return L, bmatrix
 
 
